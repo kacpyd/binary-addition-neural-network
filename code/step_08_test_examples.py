@@ -68,9 +68,6 @@ def test_example(a, b, model, input_width=4):
     print()
 
 
-# -------------------------
-# 1. Budowa danych
-# -------------------------
 X, Y = build_dataset(4)
 
 X_tensor = torch.tensor(X, dtype=torch.float32)
@@ -80,9 +77,6 @@ print("Shape of X:", X_tensor.shape)
 print("Shape of Y:", Y_tensor.shape)
 
 
-# -------------------------
-# 2. Model
-# -------------------------
 model = nn.Sequential(
     nn.Linear(8, 32),
     nn.ReLU(),
@@ -93,9 +87,6 @@ model = nn.Sequential(
 )
 
 
-# -------------------------
-# 3. Uczenie
-# -------------------------
 criterion = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.1)
 
@@ -113,9 +104,6 @@ for epoch in range(epochs):
         print(f"Epoch {epoch}, loss = {loss.item():.6f}")
 
 
-# -------------------------
-# 4. Ocena na całym zbiorze
-# -------------------------
 with torch.no_grad():
     predictions = model(X_tensor)
     predictions_rounded = (predictions >= 0.5).float()
@@ -135,9 +123,6 @@ print("Final accuracy:", accuracy.item())
 print()
 
 
-# -------------------------
-# 5. Test konkretnych sum
-# -------------------------
 test_example(1, 1, model)
 test_example(2, 3, model)
 test_example(9, 4, model)
