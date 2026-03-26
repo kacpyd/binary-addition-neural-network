@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 09:40:44 2026
-
-@author: kacpe
+Step 07:
+Evaluate the trained model and measure accuracy on the full dataset.
 """
 
 import torch
