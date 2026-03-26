@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 08:47:01 2026
-
-@author: kacpe
+Step 01:
+Create a helper function that converts an integer into a fixed-length binary list.
 """
 
 def int_to_bits(n, width):
