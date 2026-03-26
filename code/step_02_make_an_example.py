@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 08:59:27 2026
-
-@author: kacpe
+Step 02:
+Build a single training example: two binary inputs and their binary sum as output.
 """
 
 def int_to_bits(n, width):
