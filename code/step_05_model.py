@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 09:25:36 2026
-
-@author: kacpe
+Step 05:
+Define the neural network model for binary addition.
 """
 
 import torch
