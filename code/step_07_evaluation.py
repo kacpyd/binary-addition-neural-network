@@ -64,7 +64,7 @@ for epoch in range(epochs):
     optimizer.step()
     
     if epoch % 300 == 0:
-        print(f"Epoka {epoch}, loss = {loss.item():.6f}")
+        print(f"Epoch {epoch}, loss = {loss.item():.6f}")
         
 with torch.no_grad():
     predictions = model(X_tensor)
@@ -73,9 +73,9 @@ with torch.no_grad():
 print("\nKilka przykładów:")
 
 for i in range(10):
-    print("Wejście:   ", X_tensor[i].tolist())
-    print("Prawda:    ", Y_tensor[i].tolist())
-    print("Przewidz.: ", predictions_rounded[i].tolist())
+    print("Input:   ", X_tensor[i].tolist())
+    print("True:    ", Y_tensor[i].tolist())
+    print("Predicted: ", predictions_rounded[i].tolist())
     print()
 
 correct_rows = (predictions_rounded == Y_tensor).all(dim=1)
