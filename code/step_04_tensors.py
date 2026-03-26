@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 09:03:23 2026
-
-@author: kacpe
+Step 04:
+Convert the generated dataset into PyTorch tensors.
 """
-
 import torch
 
 def int_to_bits(n, width):
