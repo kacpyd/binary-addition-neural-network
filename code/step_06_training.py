@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 09:35:42 2026
-
-@author: kacpe
+Step 06:
+Train the neural network using BCELoss and the Adam optimizer.
 """
 
 import torch
