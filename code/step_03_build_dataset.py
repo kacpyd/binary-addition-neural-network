@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 09:01:29 2026
-
-@author: kacpe
+Step 03:
+Generate the full dataset for all pairs of 4-bit binary numbers.
 """
 
 def int_to_bits(n, width):
